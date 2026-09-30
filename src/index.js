@@ -40,7 +40,6 @@ import {
 	unstable_batchedUpdates,
 	StrictMode,
 	Suspense,
-	SuspenseList,
 	lazy,
 	__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
 } from 'preact/compat';
@@ -305,7 +304,6 @@ export default {
 	unstable_batchedUpdates,
 	StrictMode,
 	Suspense,
-	SuspenseList,
 	lazy,
 	__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
 };
@@ -355,7 +353,6 @@ export {
 	unstable_batchedUpdates,
 	StrictMode,
 	Suspense,
-	SuspenseList,
 	lazy,
 	__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
 };
