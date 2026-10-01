@@ -83,6 +83,8 @@ options[HOOK_RENDER] = (vnode) => {
 
 const oldVNodeHook = options.vnode;
 options.vnode = (vnode) => {
+	if (oldVNodeHook) oldVNodeHook(vnode);
+
 	const type = vnode.type;
 	const props = vnode.props;
 
@@ -120,7 +122,6 @@ options.vnode = (vnode) => {
 			props.children = replaceIterables(props.children);
 		}
 	}
-	if (oldVNodeHook) oldVNodeHook(vnode);
 };
 
 function setRef(name, value) {
